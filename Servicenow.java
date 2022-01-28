@@ -38,6 +38,7 @@ public  void bsclas() throws IOException, InterruptedException {
 			driver.switchTo().frame(0);
 			driver.findElement(By.xpath("//input[@id='incident.short_description']")).sendKeys("CREATOR USER");
 		    driver.findElement(By.xpath("//button[@class='form_action_button  action_context btn btn-default']")).click();
+		    Thread.sleep(4000);
 		    driver.findElement(By.xpath("//input[@class='form-control']")).sendKeys(attribute,Keys.ENTER);
 		    
 		    WebElement element = driver.findElement(By.xpath("//a[@class='linked formlink']"));

@@ -20,6 +20,7 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 driver.manage().window().maximize();
 driver.get("https://dev101786.service-now.com/nav_to.do?");	
 driver.switchTo().frame(0);
+Thread.sleep(900);
 driver.findElement(By.xpath("//input[@id='user_name']")).sendKeys("admin");
 driver.findElement(By.xpath("//input[@id='user_password']")).sendKeys("XYZ123a#",Keys.ENTER);
 Thread.sleep(9000);
